@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GitHub_Followers_take2
 //
-//  Created by Admin on 04.12.2020.
+//  Created by Admin on 09.12.2020.
 //
 
 import Foundation
