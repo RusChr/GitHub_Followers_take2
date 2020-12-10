@@ -8,7 +8,7 @@
 import UIKit
 
 enum ItemInfoType {
-    case repos, gists, following, followers
+    case repos, gists, followers, following
 }
 
 
@@ -16,7 +16,7 @@ class GFItemInfoView: UIView {
 
     let symbolImageView = UIImageView()
     let titleLabel = GFTitleLabel(textAlignment: .left, fontSize: 14)
-    let countLabel = GFTitleLabel(textAlignment: .center, fontSize: 14)
+    let countLabel = GFTitleLabel(textAlignment: .left, fontSize: 14)
     
     
     override init(frame: CGRect) {
@@ -36,7 +36,7 @@ class GFItemInfoView: UIView {
         addSubview(countLabel)
         
         symbolImageView.translatesAutoresizingMaskIntoConstraints = false
-        symbolImageView.contentMode = .scaleToFill
+        symbolImageView.contentMode = .scaleAspectFill
         symbolImageView.tintColor = .label
         
         NSLayoutConstraint.activate([
@@ -51,8 +51,8 @@ class GFItemInfoView: UIView {
             titleLabel.heightAnchor.constraint(equalToConstant: 18),
             
             countLabel.topAnchor.constraint(equalTo: symbolImageView.bottomAnchor, constant: 4),
-            countLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            countLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            countLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
+            countLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
             countLabel.heightAnchor.constraint(equalToConstant: 18)
         ])
     }
@@ -62,15 +62,18 @@ class GFItemInfoView: UIView {
         switch itemInfoType {
         case .repos:
             symbolImageView.image = UIImage(systemName: SFSybmols.repos)
+            symbolImageView.tintColor = .systemOrange
             titleLabel.text = "Public Repos"
         case .gists:
             symbolImageView.image = UIImage(systemName: SFSybmols.gists)
             titleLabel.text = "Public Gists"
         case .followers:
             symbolImageView.image = UIImage(systemName: SFSybmols.followers)
+            symbolImageView.tintColor = .systemIndigo
             titleLabel.text = "Followers"
         case .following:
             symbolImageView.image = UIImage(systemName: SFSybmols.following)
+            symbolImageView.tintColor = .systemPink
             titleLabel.text = "Following"
         }
         

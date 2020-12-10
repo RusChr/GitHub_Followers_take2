@@ -10,7 +10,7 @@ import Foundation
 enum SFSybmols {
     static let location = "mappin.and.ellipse"
     static let repos = "folder"
-    static let gists = "text.alignleft"
-    static let followers = "heart"
-    static let following = "person.2"
+    static let gists = "text.redaction"
+    static let following = "heart.fill"
+    static let followers = "person.2"
 }

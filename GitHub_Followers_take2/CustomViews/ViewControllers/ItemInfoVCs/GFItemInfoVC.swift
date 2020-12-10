@@ -44,7 +44,7 @@ class GFItemInfoVC: UIViewController {
     
     private func configureStackView() {
         stackView.axis = .horizontal
-        stackView.distribution = .equalSpacing
+        stackView.distribution = .fillProportionally
         
         stackView.addArrangedSubview(itemInfoViewOne)
         stackView.addArrangedSubview(itemInfoViewTwo)
