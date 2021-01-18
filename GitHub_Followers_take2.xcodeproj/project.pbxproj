@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E4B157325B5545B0062420B /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B157225B5545B0062420B /* PersistenceManager.swift */; };
+		5E4B157825B5D4400062420B /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B157725B5D4400062420B /* FavoriteCell.swift */; };
 		84001A4E2563F97C00426799 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84001A4D2563F97C00426799 /* SearchVC.swift */; };
 		84001A532563F9E700426799 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84001A522563F9E700426799 /* FavoritesVC.swift */; };
 		84001A58256408AC00426799 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84001A57256408AC00426799 /* GFButton.swift */; };
@@ -60,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		5E4B157225B5545B0062420B /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		5E4B157725B5D4400062420B /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		84001A4D2563F97C00426799 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		84001A522563F9E700426799 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		84001A57256408AC00426799 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8452B2C3257BB432002D2B78 /* FollowerCell.swift */,
+				5E4B157725B5D4400062420B /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				8452B2C4257BB432002D2B78 /* FollowerCell.swift in Sources */,
 				844BCA37258220DB00BA79C7 /* GFFollowerItemVC.swift in Sources */,
 				844BCA282582039900BA79C7 /* GFItemInfoView.swift in Sources */,
+				5E4B157825B5D4400062420B /* FavoriteCell.swift in Sources */,
 				8480ECE92576A3DB0020BC51 /* GFBodyLabel.swift in Sources */,
 				84CF67C82580E954003A1547 /* GFUserInfoHeaderVC.swift in Sources */,
 				84CF67C32580C03F003A1547 /* GFError.swift in Sources */,
